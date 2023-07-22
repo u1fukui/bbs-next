@@ -7,7 +7,7 @@ const HeaderText = Kaisei_Opti({
 
 export default function Header() {
     return (
-        <div className="w-full h-20 flex items-center">
+        <div className="w-full h-20 flex items-center px-4">
             <h1 className={`${HeaderText.className} text-3xl`}>れんしゅうけいじばん</h1>
         </div>
     )

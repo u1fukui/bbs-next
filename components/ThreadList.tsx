@@ -10,7 +10,7 @@ type DummyData = {
 }
 
 async function fetchThreads(categoryId: string): Promise<DummyData[]> {
-    return await fetch("https://jsonplaceholder.typicode.com/posts")
+    return await fetch("https://jsonplaceholder.typicode.com/posts", { cache: "no-store" })
         .then((res) => res.json())
         .then(
             //ウエイト追加
